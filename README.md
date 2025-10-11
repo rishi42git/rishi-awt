@@ -31,10 +31,13 @@ Create a simple static webpage using HTML and CSS.
 
 **Challenges Faced:**  
 - Understanding CSS selectors and positioning elements properly.
-
+EXPERIMENT 1 HTML
 ![experiment 1 html](<codes and outputs/exp1 html.png>)
+EXPERIMENT 1 CSS
 ![experiment 1 css](<codes and outputs/exp1 css.png>)
+EXPERIMENT 1 JS
 ![experiment 1 js](<codes and outputs/exp1 js.png>)
+EXPERIMENT 1 OUTPUT
 ![experiment 1 output](<codes and outputs/exp1 output.png>)
 ---
 
@@ -52,8 +55,11 @@ Perform DOM manipulations using JavaScript — changing content, reacting to eve
 **Challenges Faced:**  
 - Debugging event listeners and ensuring scripts loaded after DOM.
 
+EXPERIMENT 2 HTML
 ![experiment 2 html](<codes and outputs/exp2 html.png>)
+EXPERIMENT 2 CSS
 ![experiment 2 css](<codes and outputs/exp2 css.png>)
+EXPERIMENT 2 OUTPUT
 ![experiment 2 output](<codes and outputs/exp2 output.png>)
 ---
 
@@ -71,8 +77,11 @@ Validate user inputs in forms using JavaScript.
 **Challenges Faced:**  
 - Preventing form submission when validation failed.
 
+EXPERIMENT 3 HTML
 ![experiment 3 html](<codes and outputs/exp3 html.png>)
+EXPERIMENT 3 CSS
 ![experiment 3 css](<codes and outputs/exp3 css.png>)
+EXPERIMENT 3 OUTPUT
 ![experiment 3 output](<codes and outputs/exp3 output.png>)
 ---
 
@@ -90,15 +99,22 @@ Use modular coding by separating JS and CSS files.
 **Challenges Faced:**  
 - Handling file paths and ensuring all resources loaded correctly.
 bill payment record
+EXPERIMENT 4 HTML
 ![experiment 4 html](<codes and outputs/exp4 html.png>)
+EXPERIMENT 4 CSS
 ![experiment 4 css](<codes and outputs/exp4 css.png>)
+EXPERIMENT 4 JS
 ![experiment 4 js](<codes and outputs/exp4 js.png>)
+EXPERIMENT 4 OUTPUT
 ![experiment 4 output](<codes and outputs/exp4 output.png>)
 
 registration form
+EXPERIMENT  4.1 HTML
 ![experiment 4.2 html](<codes and outputs/exp4.2 html.png>)
+EXPERIMENT 4.1 CSS
 ![experiment 4.2 css](<codes and outputs/exp4.2 css.png>)
-
+EXPERIMENT 4.1 OUTPUT 
+![experiment 4.2 output](<codes and outputs/exp4.2 output.png>)
 ---
 
 ## Experiment 5 – jQuery Effects & DOM Traversal
@@ -121,8 +137,11 @@ Understand the basics of Node.js and JavaScript execution outside the browser.
 
 **Skills Gained:**  
 Simplified DOM handling — *"Write less, do more!"*
+EXPERIMENT 5_6 SERVER
 ![experiment 5_6 server](<codes and outputs/exp 5_6 server.png>)
+EXPERIMENT OUTPUT
 ![experiment 5_6 output](<codes and outputs/exp 5_6 output.png>)
+EXPERIMENT OUTPUT
 ![calculator](<codes and outputs/calculator .png>)
 ---
 
@@ -142,11 +161,17 @@ Build a small web application using **Express.js**.
 
 **Challenges Faced:**  
 - Configuring Express routing and managing dependencies via `npm`.
+EXPERIMENT 7 : COOKIES
 ![experiment 7.1 cookies](<codes and outputs/exp 7 cookies.png>)
+OUTPUT
 ![experiment 7.1 cookies set](<codes and outputs/cookies set.png>)
+COOKIE RETRIEVAL 
 ![cookies retrieved](<codes and outputs/cookies retrieved.png>)
+EXPERIMENT 7.2 SERVER
 ![experiment 7.2 server](<codes and outputs/exp 7 server.png>)
+EXPERIMENT 7 SESSION COUNT
 ![experiment 7 session count](<codes and outputs/exp 7 output.png>)
+EXPERIMENT 7 SESSION DESTROY
 ![experiment 7  session destroyed](<codes and outputs/exp session.png>)
 
 **Run Instructions:**
