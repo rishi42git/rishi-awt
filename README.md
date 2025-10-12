@@ -269,6 +269,7 @@ Package.json
   }
 }
 ```
+
 EXPERIMENT 7 : COOKIES
 ![experiment 7.1 cookies](<codes and outputs/exp 7 cookies.png>)
 OUTPUT
