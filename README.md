@@ -288,3 +288,117 @@ EXPERIMENT 7 SESSION DESTROY
 cd exp7
 npm install
 node server.js
+
+
+
+Experiment 8  
+## MongoDB + Mongoose + Express — Student Management System
+
+---
+
+##  Overview
+This project implements a **Student Management Web Application** using:
+
+- **Node.js + Express** for backend APIs  
+- **MongoDB Atlas** for cloud database  
+- **Mongoose** for schema & database operations  
+- **Vanilla HTML/CSS/JS** for frontend  
+
+Key Concepts Learned
+Connecting to MongoDB using Mongoose
+Creating data schema & models
+Hashing passwords with bcrypt
+User registration & login flow
+Session management / Cookies
+Storing users securely
+Handling authentication errors
+Structuring MVC-like project folders
+
+Challenges faced:
+
+Understanding how async/await works with database operations.
+Forgetting to use express.urlencoded() which caused form data to not reach the backend.
+Schema mistakes like missing fields or wrong data types.
+Difficulty connecting to MongoDB Cloud due to IP access settings.
+
+CODE:
+![Experiment 8: Student management system : index](<codes and outputs/stuindex.png>)
+![experiment 8: server.js](<codes and outputs/stuserver.png>)
+![experiment 8: Student.js](<codes and outputs/stujs.png>)
+
+OUTPUT:
+![experiment 8: Student management system : OUTPUT ](<codes and outputs/stuoutput.png>)
+
+
+
+**Run Instructions:**
+```bash
+npm install
+node server.js
+
+**click render link if on the git index page of Rishi42git**
+
+Experiment 8 : Shopping centre managemet system
+CODE:
+![Experiment 8: Shopping centre management system : index](<codes and outputs/shopindex.png>)
+![experiment 8: server.js](<codes and outputs/shopserver.png>)
+![experiment 8: items.js](<codes and outputs/shopjs.png>)
+![experiment 8: style.css](<codes and outputs/shopcss.png>)
+
+
+OUTPUT:
+![experiment 8: Shopping centre management system : OUTPUT ](<codes and outputs/shopoutput.png>)
+
+
+**Run Instructions:**
+```bash
+npm install
+node server.js
+
+**click render link if on the git index page of Rishi42git**
+
+Experiment 9&10
+Topic: SVG Basics, D3.js Visualizations, Interactive Graphics, CSV Data Handling Files: csv.html,data.csv,exp.htm,index.html
+
+What I learned:
+
+Creating a bar chart using SVG and D3.js
+Selecting and modifying particular elements using D3
+Creating circles and rectangles as interactive controls
+Fetching data from CSV and creating a graph
+Code
+![experiment 9_10:CSV.HTML](<codes and outputs/dvcsv.png>)
+![experiment 9_10:DATA.CSV](<codes and outputs/dvdata.png>)
+![experiment 9_10:index.html](<codes and outputs/dvindex.png>)
+![experiment 9_10:exp.HTML](<codes and outputs/dvexp.png>)
+
+OUTPUT:
+![experiment 9_10:OUTPUT](<codes and outputs/Screenshot From 2025-12-01 23-13-09.png>)
+![experiment 9_10:OUTPUT](<codes and outputs/Screenshot From 2025-12-01 23-13-51.png>)
+
+
+
+
+Challenges faced:
+
+Understanding the enter-update-exit pattern of D3.js
+Forgetting to include the D3 script link (leading to "d3 is not defined" errors).
+Getting confused between pixel values and scale values. -Difficulty in making interactions (click/hover) work correctly.
+Conclusion
+This lab helped me gain hands-on experience in front-end and back-end web development.
+
+
+I learned how to:
+Design interactive front-end applications (HTML, CSS, JS, jQuery, Angular).
+Build and deploy backend applications using Node.js and Express.
+Handle user sessions, cookies, and server routing.
+
+Submitted by: RISHABH JADLI
+Course: Advanced Web Technology Lab
+Tools Used: VS Code, Node.js, GitHub.
+
+
+
+
+
+

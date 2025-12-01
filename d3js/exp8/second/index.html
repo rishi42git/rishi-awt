@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Management</title>
+
+  <style>
+    /* Dark Minimalist Theme */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      padding: 30px;
+    }
+
+    h2 {
+      color: #90caf9;
+      border-left: 3px solid #90caf9;
+      padding-left: 8px;
+      font-weight: 400;
+    }
+
+    input {
+      padding: 10px;
+      margin: 8px 0;
+      width: 250px;
+      border: 1px solid #333;
+      border-radius: 4px;
+      background: #1e1e1e;
+      color: #e0e0e0;
+    }
+
+    input::placeholder {
+      color: #888;
+    }
+
+    button {
+      padding: 10px 20px;
+      background: #90caf9;
+      color: #121212;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: 500;
+      transition: 0.2s;
+    }
+
+    button:hover {
+      background: #64b5f6;
+    }
+
+    table {
+      width: 80%;
+      margin-top: 20px;
+      border-collapse: collapse;
+      background: #1e1e1e;
+      box-shadow: 0 0 10px #000;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #333;
+      text-align: left;
+    }
+
+    th {
+      background: #333;
+      color: #90caf9;
+    }
+
+    .highlight {
+      background: #37474f !important;
+      font-weight: bold;
+    }
+
+    hr {
+      border: 0.5px solid #333;
+    }
+  </style>
+</head>
+
+<body>
+
+<h2>Add Student</h2>
+
+<form id="addForm">
+  <input type="text" name="name" placeholder="Name" required><br>
+  <input type="number" name="roll" placeholder="Roll" required><br>
+  <input type="text" name="branch" placeholder="Branch" required><br>
+  <input type="number" name="year" placeholder="Year" required><br>
+  <button type="submit">Add Student</button>
+</form>
+
+<hr><br>
+
+<h2>Search Student</h2>
+<input type="text" id="searchBox" placeholder="Enter name or roll" onkeyup="highlightSearch()">
+<button onclick="highlightSearch()">Search</button>
+
+<hr><br>
+
+<h2>All Students</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Roll</th>
+      <th>Branch</th>
+      <th>Year</th>
+    </tr>
+  </thead>
+  <tbody id="studentTable"></tbody>
+</table>
+
+<script src="student.js"></script>
+
+</body>
+</html>

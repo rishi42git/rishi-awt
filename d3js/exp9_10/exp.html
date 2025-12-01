@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Experiment 9: Combined Visualizations</title>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
+    background: #fafafa;
+  }
+
+  h1 {
+    color: #222;
+    font-weight: 600;
+    margin-bottom: 30px;
+  }
+
+  section {
+    margin-bottom: 40px;
+    padding: 18px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: white;
+  }
+
+  h2 {
+    margin-top: 0;
+    color: #0077cc;
+  }
+
+  button {
+    padding: 8px 15px;
+    background: #0077cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+
+  button:hover {
+    background: #005fa6;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Experiment 9: SVG + D3 (Combined)</h1>
+
+<!-- ====================================================== -->
+<section>
+<h2>1. Bar Chart using SVG + D3.js</h2>
+<svg id="barChart" width="500" height="250"></svg>
+
+<script>
+const data = [10, 30, 20, 40, 25];
+
+const svg1 = d3.select("#barChart");
+const height1 = 250;
+const barWidth = 50;
+
+svg1.selectAll("rect")
+  .data(data)
+  .enter()
+  .append("rect")
+  .attr("x", (d, i) => i * (barWidth + 10))
+  .attr("y", d => height1 - d * 5)
+  .attr("width", barWidth)
+  .attr("height", d => d * 5)
+  .attr("fill", "#4e79a7");
+</script>
+</section>
+
+
+<!-- ====================================================== -->
+<section>
+<h2>2. Interactive Shapes (Circles & Rectangles)</h2>
+
+<svg id="shapes" width="500" height="250"></svg>
+
+<script>
+const svg2 = d3.select("#shapes");
+
+// Circle
+svg2.append("circle")
+  .attr("cx", 100)
+  .attr("cy", 120)
+  .attr("r", 40)
+  .attr("fill", "#f28e2b")
+  .on("mouseover", () => d3.select("circle").attr("fill", "#d62728"))
+  .on("mouseout", () => d3.select("circle").attr("fill", "#f28e2b"));
+
+// Rectangle
+svg2.append("rect")
+  .attr("x", 200)
+  .attr("y", 100)
+  .attr("width", 80)
+  .attr("height", 60)
+  .attr("fill", "#59a14f")
+  .on("click", function(){ d3.select(this).attr("fill", "#af7aa1"); });
+</script>
+</section>
+
+
+<!-- ====================================================== -->
+<section>
+<h2>3. Modify Selected Element</h2>
+
+<svg id="mod" width="400" height="200">
+  <circle id="myCircle" cx="150" cy="100" r="50" fill="#4e79a7"></circle>
+</svg>
+
+<button onclick="changeColor()">Change Color</button>
+<button onclick="increaseSize()">Increase Size</button>
+
+<script>
+function changeColor() {
+  d3.select("#myCircle").attr("fill", "#e15759");
+}
+function increaseSize() {
+  d3.select("#myCircle").attr("r", 80);
+}
+</script>
+</section>
+
+</body>
+</html>

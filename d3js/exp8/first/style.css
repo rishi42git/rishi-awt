@@ -1,0 +1,131 @@
+/* ---------- GLOBAL ---------- */
+body {
+  margin: 0;
+  background: #0e0e0e;
+  font-family: Arial, sans-serif;
+  color: #e6e6e6;
+  display: flex;
+  justify-content: center;
+}
+
+/* ---------- LAYOUT ---------- */
+.container {
+  width: 800px;
+  padding: 40px;
+}
+
+/* ---------- HEADERS ---------- */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* ---------- CARD UI ---------- */
+.card {
+  background: #161616;
+  padding: 25px;
+  border-radius: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #222;
+}
+
+/* ---------- FORM ---------- */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  padding: 12px;
+  background: #111;
+  border: 1px solid #2a2a2a;
+  border-radius: 6px;
+  color: #eee;
+  font-size: 15px;
+}
+
+form input:focus {
+  border-color: #444;
+}
+
+/* ---------- BUTTONS ---------- */
+button {
+  padding: 10px 15px;
+  font-size: 15px;
+  cursor: pointer;
+  border: none;
+  background: #242424;
+  color: #e6e6e6;
+  border-radius: 6px;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #3a3a3a;
+}
+
+/* ---------- TABLE ---------- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  border: 1px solid #222;
+}
+
+th, td {
+  padding: 12px;
+  border-bottom: 1px solid #222;
+}
+
+th {
+  background: #1e1e1e;
+  font-weight: 500;
+}
+
+tr:hover {
+  background: #262626;
+}
+
+/* ---------- ACTION BUTTONS ---------- */
+.action-btn {
+  padding: 6px 10px;
+  margin-right: 6px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.delete-btn {
+  background: #461919;
+  color: #ffb2b2;
+}
+.delete-btn:hover { background: #5f1e1e; }
+
+.update-btn {
+  background: #16324e;
+  color: #92c4ff;
+}
+.update-btn:hover { background: #1f4972; }
+
+.sale-btn {
+  background: #1e4821;
+  color: #a8f6a8;
+}
+.sale-btn:hover { background: #2c6e2f; }
+
+/* ---------- EMPTY STATE ---------- */
+.empty {
+  text-align: center;
+  padding: 18px;
+  color: #777;
+  font-style: italic;
+}
