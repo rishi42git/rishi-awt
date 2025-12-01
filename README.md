@@ -320,17 +320,15 @@ Understanding how async/await works with database operations.
 Forgetting to use express.urlencoded() which caused form data to not reach the backend.
 Schema mistakes like missing fields or wrong data types.
 Difficulty connecting to MongoDB Cloud due to IP access settings.
-
 CODE:
+INDEX FILE
 ![Experiment 8: Student management system : index](<codes and outputs/stuindex.png>)
+SERVER.JS
 ![experiment 8: server.js](<codes and outputs/stuserver.png>)
+STUDENT.JS
 ![experiment 8: Student.js](<codes and outputs/stujs.png>)
-
 OUTPUT:
 ![experiment 8: Student management system : OUTPUT ](<codes and outputs/stuoutput.png>)
-
-
-
 **Run Instructions:**
 ```bash
 npm install
@@ -340,16 +338,16 @@ node server.js
 
 Experiment 8 : Shopping centre managemet system
 CODE:
+INDEX.HTML
 ![Experiment 8: Shopping centre management system : index](<codes and outputs/shopindex.png>)
+SERVER.JS
 ![experiment 8: server.js](<codes and outputs/shopserver.png>)
+BACKEND ITEMS.JS
 ![experiment 8: items.js](<codes and outputs/shopjs.png>)
+STYLE.CSS
 ![experiment 8: style.css](<codes and outputs/shopcss.png>)
-
-
 OUTPUT:
 ![experiment 8: Shopping centre management system : OUTPUT ](<codes and outputs/shopoutput.png>)
-
-
 **Run Instructions:**
 ```bash
 npm install
@@ -367,20 +365,20 @@ Selecting and modifying particular elements using D3
 Creating circles and rectangles as interactive controls
 Fetching data from CSV and creating a graph
 Code
+CSV.HTML
 ![experiment 9_10:CSV.HTML](<codes and outputs/dvcsv.png>)
+DATA.CSV
 ![experiment 9_10:DATA.CSV](<codes and outputs/dvdata.png>)
+INDEX.HTML
 ![experiment 9_10:index.html](<codes and outputs/dvindex.png>)
+EXP.HTML
 ![experiment 9_10:exp.HTML](<codes and outputs/dvexp.png>)
 
 OUTPUT:
 ![experiment 9_10:OUTPUT](<codes and outputs/Screenshot From 2025-12-01 23-13-09.png>)
 ![experiment 9_10:OUTPUT](<codes and outputs/Screenshot From 2025-12-01 23-13-51.png>)
 
-
-
-
 Challenges faced:
-
 Understanding the enter-update-exit pattern of D3.js
 Forgetting to include the D3 script link (leading to "d3 is not defined" errors).
 Getting confused between pixel values and scale values. -Difficulty in making interactions (click/hover) work correctly.
