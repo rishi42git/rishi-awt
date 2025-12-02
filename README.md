@@ -12,9 +12,13 @@ SAP ID : 590010052
 7. [Experiment 7 – Express Application](#experiment-7--express-application)
 8. [Cookies & Sessions in Node.js](#cookies--sessions-in-nodejs)
 9. [Node.js Lab Programs](#nodejs-lab-programs)
-10. [My Project](#my-project)
-11. [Rick Project](#rick-project)
+10. [Experiment 8](#-experiment-8)
+10. [Experiment 9&10](#-experiment-9&10)
+11. [Conclusion](#-conclusion)
+12. [My Project](#my-project)
+13. [Rick Project](#rick-project)
 ---
+
 
 ## Experiment 1 – Basic Jquery implementation
 **Files:** `exp1/index.html`, `exp1/style.css`, `exp1/jquery.js`
@@ -183,92 +187,6 @@ create and delete cookie using nodejs
 - Configuring Express routing and managing dependencies via `npm`.
 
 Cookie-example.js
-```
-const express = require('express');
-const cookieParser = require('cookie-parser');
-
-const app = express();
-app.use(cookieParser());
-
-app.get('/set-cookie', (req, res) => {
-    res.cookie('username', 'JohnDoe', { maxAge: 900000 });
-    res.send('Cookie has been set');
-});
-
-app.get('/get-cookie', (req, res) => {
-    const user = req.cookies['username'];
-    res.send(`Cookie Retrieved: ${user}`);
-});
-
-app.get('/delete-cookie', (req, res) => {
-    res.clearCookie('username');
-    res.send('Cookie deleted');
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-    console.log(`Server started on http://localhost:${PORT}`);
-});
-```
-Session-example.js
-```
-const express = require('express');
-const session = require('express-session');
-
-const app = express();
-
-app.use(session({
-    secret: 'mysecretkey',
-    resave: false,
-    saveUninitialized: true
-}));
-
-app.get('/', (req, res) => {
-    if (req.session.views) {
-        req.session.views++;
-        res.send(`Welcome back! You visited ${req.session.views} times.`);
-    } else {
-        req.session.views = 1;
-        res.send('Welcome to the session demo. Refresh to count visits.');
-    }
-});
-
-app.get('/destroy', (req, res) => {
-    req.session.destroy(err => {
-        if (err) {
-            return res.send('Error destroying session');
-        }
-        res.send('Session destroyed');
-    });
-});
-
-const PORT = process.env.PORT || 3000;
-
-app.listen(PORT, () => {
-    console.log(`Server started on http://localhost:${PORT}`);
-});
-```
-Package.json
-```
-{
-  "name": "experiment_7",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cookie-parser": "^1.4.7",
-    "express": "^5.1.0",
-    "express-session": "^1.18.2"
-  }
-}
-```
 
 EXPERIMENT 7 : COOKIES
 ![experiment 7.1 cookies](<codes and outputs/exp 7 cookies.png>)
@@ -284,15 +202,15 @@ EXPERIMENT 7 SESSION DESTROY
 ![experiment 7  session destroyed](<codes and outputs/exp session.png>)
 
 **Run Instructions:**
-```bash
-cd exp7
-npm install
-node server.js
+- ```bash
+- cd exp7
+- npm install
+- node server.js
 
 
 
-Experiment 8  
-## MongoDB + Mongoose + Express — Student Management System
+## Experiment 8  
+- MongoDB + Mongoose + Express — Student Management System
 
 ---
 
@@ -330,9 +248,9 @@ STUDENT.JS
 OUTPUT:
 ![experiment 8: Student management system : OUTPUT ](<codes and outputs/stuoutput.png>)
 **Run Instructions:**
-```bash
-npm install
-node server.js
+- ```bash
+- npm install
+- node server.js
 
 **click render link if on the git index page of Rishi42git**
 
@@ -349,9 +267,9 @@ STYLE.CSS
 OUTPUT:
 ![experiment 8: Shopping centre management system : OUTPUT ](<codes and outputs/shopoutput.png>)
 **Run Instructions:**
-```bash
-npm install
-node server.js
+- ```bash
+- npm install
+- node server.js
 
 **click render link if on the git index page of Rishi42git**
 
