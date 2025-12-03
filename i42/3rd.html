@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+</head>
+<body>
+    <textarea id="textInput" placeholder="Type something..."></textarea>
+    <button id="speakBtn">Speak</button>
+
+    <script>
+        let voices = [];
+
+        function loadVoices() {
+            voices = speechSynthesis.getVoices();
+        }
+
+        speechSynthesis.onvoiceschanged = loadVoices;
+
+        document.getElementById("speakBtn").onclick = () => {
+            let msg = new SpeechSynthesisUtterance(
+                document.getElementById("textInput").value
+            );
+
+            msg.voice = voices[0] || null;
+            msg.rate = 1;
+            msg.pitch = 1;
+
+            speechSynthesis.speak(msg);
+        };
+    </script>
+</body>
+</html>

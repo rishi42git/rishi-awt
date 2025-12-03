@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <textarea id="textInput" placeholder="Type here..."></textarea>
+    <button id="speakBtn">Speak</button>
+
+    <script>
+        const btn = document.getElementById("speakBtn");
+        const txt = document.getElementById("textInput");
+
+        btn.addEventListener("click", () => {
+            const message = txt.value.trim();
+            if (!message) return alert("Please type something!");
+
+            const utter = new SpeechSynthesisUtterance(message);
+            utter.rate = 1;        // speed (0.5–2)
+            utter.pitch = 1;       // voice pitch (0–2)
+            utter.volume = 1;      // 0–1
+            speechSynthesis.speak(utter);
+        });
+    </script>
+
+</body>
+</html>
